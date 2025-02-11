@@ -1,0 +1,2044 @@
+{
+	"info": {
+		"_postman_id": "effd458b-778c-426d-b58d-36e971343a46",
+		"name": "Speaker Diarization Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Meeting Management",
+			"item": [
+				{
+					"name": "Create Meeting",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGIxZTA5OGQ0Yzc1MzBjZTQyM2NmMzMiLCJpYXQiOjE2MjIyNzgxMzMsImV4cCI6MTYyMjI4NTMzMywidHlwZSI6ImFjY2VzcyJ9.fqIm6SQof26i15yPzHx6r6mc3Yu0R9WsFfMgeNUcL04",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"zoom-meeting-21\",\r\n    \"name\": \" Work life balance Latest\",\r\n    \"topic\": \" Work life balance Latest\",\r\n    \"noOfParticipants\": 45,\r\n    \"heldOn\": \"01-May-2021\",\r\n    \"hub\": \"Madeline Underwood\",\r\n    \"duration\": \"1Hr 33Min\",\r\n    \"interactionsRawData\": \"{\\\"videos\\\":[{\\\"id\\\":0,\\\"vname\\\":\\\"NIIT R&D Conference\\\",\\\"vduration\\\":\\\"2hrs 30mins\\\",\\\"vheldOn\\\":\\\"21 Feb 2020\\\",\\\"vhubs\\\":[],\\\"data\\\":[{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":1,\\\"cdoi\\\":8,\\\"ia\\\":null},{\\\"pid\\\":\\\"8\\\",\\\"pname\\\":\\\"Speaker_8\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"11\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":2,\\\"cdoi\\\":11,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"9\\\",\\\"pname\\\":\\\"Speaker_9\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"1\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":3,\\\"cdoi\\\":1,\\\"ia\\\":\\\"8\\\"},{\\\"pid\\\":\\\"4\\\",\\\"pname\\\":\\\"Speaker_4\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"11\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":4,\\\"cdoi\\\":11,\\\"ia\\\":\\\"9\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"3\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":5,\\\"cdoi\\\":11,\\\"ia\\\":\\\"4\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"4\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":6,\\\"cdoi\\\":4,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":7,\\\"cdoi\\\":19,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"10\\\",\\\"pname\\\":\\\"Speaker_10\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"2\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":8,\\\"cdoi\\\":2,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"13\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":9,\\\"cdoi\\\":32,\\\"ia\\\":\\\"10\\\"},{\\\"pid\\\":\\\"8\\\",\\\"pname\\\":\\\"Speaker_8\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"6\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":10,\\\"cdoi\\\":17,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"10\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":11,\\\"cdoi\\\":14,\\\"ia\\\":\\\"8\\\"},{\\\"pid\\\":\\\"5\\\",\\\"pname\\\":\\\"Speaker_5\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"14\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":12,\\\"cdoi\\\":14,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"2\\\",\\\"pname\\\":\\\"Speaker_2\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"10\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":13,\\\"cdoi\\\":10,\\\"ia\\\":\\\"5\\\"},{\\\"pid\\\":\\\"5\\\",\\\"pname\\\":\\\"Speaker_5\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"10\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":14,\\\"cdoi\\\":24,\\\"ia\\\":\\\"2\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"7\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":15,\\\"cdoi\\\":21,\\\"ia\\\":\\\"5\\\"},{\\\"pid\\\":\\\"8\\\",\\\"pname\\\":\\\"Speaker_8\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"23\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":16,\\\"cdoi\\\":40,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"4\\\",\\\"pname\\\":\\\"Speaker_4\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"16\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":17,\\\"cdoi\\\":27,\\\"ia\\\":\\\"8\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"19\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":18,\\\"cdoi\\\":51,\\\"ia\\\":\\\"4\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"6\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":19,\\\"cdoi\\\":27,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"7\\\",\\\"pname\\\":\\\"Speaker_7\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"3\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":20,\\\"cdoi\\\":3,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"5\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":21,\\\"cdoi\\\":56,\\\"ia\\\":\\\"7\\\"},{\\\"pid\\\":\\\"2\\\",\\\"pname\\\":\\\"Speaker_2\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"17\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":22,\\\"cdoi\\\":27,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"8\\\",\\\"pname\\\":\\\"Speaker_8\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":23,\\\"cdoi\\\":48,\\\"ia\\\":\\\"2\\\"},{\\\"pid\\\":\\\"10\\\",\\\"pname\\\":\\\"Speaker_10\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"20\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":24,\\\"cdoi\\\":22,\\\"ia\\\":\\\"8\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"6\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":25,\\\"cdoi\\\":33,\\\"ia\\\":\\\"10\\\"},{\\\"pid\\\":\\\"7\\\",\\\"pname\\\":\\\"Speaker_7\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":26,\\\"cdoi\\\":11,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"32\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":27,\\\"cdoi\\\":88,\\\"ia\\\":\\\"7\\\"},{\\\"pid\\\":\\\"5\\\",\\\"pname\\\":\\\"Speaker_5\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":28,\\\"cdoi\\\":32,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"21\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":29,\\\"cdoi\\\":109,\\\"ia\\\":\\\"5\\\"},{\\\"pid\\\":\\\"7\\\",\\\"pname\\\":\\\"Speaker_7\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":30,\\\"cdoi\\\":19,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"8\\\",\\\"pname\\\":\\\"Speaker_8\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"6\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":31,\\\"cdoi\\\":54,\\\"ia\\\":\\\"7\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"4\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":32,\\\"cdoi\\\":37,\\\"ia\\\":\\\"8\\\"},{\\\"pid\\\":\\\"10\\\",\\\"pname\\\":\\\"Speaker_10\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"11\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":33,\\\"cdoi\\\":33,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"9\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":34,\\\"cdoi\\\":46,\\\"ia\\\":\\\"10\\\"},{\\\"pid\\\":\\\"10\\\",\\\"pname\\\":\\\"Speaker_10\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"27\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":35,\\\"cdoi\\\":60,\\\"ia\\\":\\\"6\\\"}]}]}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}\\v1\\meeting",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"meeting"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Meeting",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": \"zoom-meeting-02\",\r\n  \"name\": \"zoom-meeting-name\",\r\n  \"topic\": \"zoom-meeting-topic\",\r\n  \"noOfParticipants\": 10,\r\n  \"heldOn\": \"01-May-2021\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "165"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a5-5MqFrTjSRGW1gaV45inDS+RZMLk\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:21:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"interactions\": [],\n    \"id\": \"6096baa300aaff42f0003f8b\",\n    \"name\": \"zoom-meeting-name\",\n    \"topic\": \"zoom-meeting-topic\",\n    \"noOfParticipants\": 10,\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n}"
+						},
+						{
+							"name": "Create Meeting",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": \"zoom-meeting-13\",\r\n  \"name\": \"zoom-meeting-name\",\r\n  \"topic\": \"zoom-meeting-topic\",\r\n  \"noOfParticipants\": 15,\r\n  \"heldOn\": \"01-May-2021\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "165"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a5-JgOJl1dE4fPDLd8jjq5fxRb2oBg\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:34:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"interactions\": [],\n    \"id\": \"6096bd985e3b0f2840be9511\",\n    \"name\": \"zoom-meeting-name\",\n    \"topic\": \"zoom-meeting-topic\",\n    \"noOfParticipants\": 15,\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Meetings - Pagination",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDk2YjRmM2VkMTJhZTM1NDRiMzkyOTUiLCJpYXQiOjE2MjA0OTE4MDcsImV4cCI6MTYyMDQ5MzYwNywidHlwZSI6ImFjY2VzcyJ9.f6Br3Xz78K2Zy_7I2-UuizkIY4rFYbVtGX9aNt2e2xk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/v1/meeting?sortBy=noOfParticipants&limit=4&page=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"meeting"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "noOfParticipants"
+								},
+								{
+									"key": "limit",
+									"value": "4"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Meetings - Pagination",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sortBy\": \"id\",\r\n  \"limit\": \"1\",\r\n  \"page\": \"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "397"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18d-bwluZFSYhHBzyrs5mF9D33wVc3I\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:29:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"results\": [\n        {\n            \"interactions\": [],\n            \"id\": \"6096b7fedc4869405c81d1ff\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        },\n        {\n            \"interactions\": [],\n            \"id\": \"6096baa300aaff42f0003f8b\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        }\n    ],\n    \"page\": 1,\n    \"limit\": 10,\n    \"totalPages\": 1,\n    \"totalResults\": 2\n}"
+						},
+						{
+							"name": "Get Meetings - Pagination",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/meeting?sortBy=noOfParticipants&limit=4&page=2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting"
+									],
+									"query": [
+										{
+											"key": "sortBy",
+											"value": "noOfParticipants"
+										},
+										{
+											"key": "limit",
+											"value": "4"
+										},
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "729"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d9-aXZGjzmdj0jgTRUEMwP0UnFI6gc\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:37:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"results\": [\n        {\n            \"interactions\": [],\n            \"id\": \"6096bd3b5e3b0f2840be950b\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        },\n        {\n            \"interactions\": [],\n            \"id\": \"6096b7fedc4869405c81d1ff\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        },\n        {\n            \"interactions\": [],\n            \"id\": \"6096bd2e5e3b0f2840be9508\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        },\n        {\n            \"interactions\": [],\n            \"id\": \"6096bd7c5e3b0f2840be950c\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        }\n    ],\n    \"page\": 2,\n    \"limit\": 4,\n    \"totalPages\": 3,\n    \"totalResults\": 12\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Meeting By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDk2YjRmM2VkMTJhZTM1NDRiMzkyOTUiLCJpYXQiOjE2MjA0OTE4MDcsImV4cCI6MTYyMDQ5MzYwNywidHlwZSI6ImFjY2VzcyJ9.f6Br3Xz78K2Zy_7I2-UuizkIY4rFYbVtGX9aNt2e2xk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"6096bd3b5e3b0f2840be950b\",\r\n    \"name\": \"zoom-meeting-name2\",\r\n    \"topic\": \"zoom-meeting-topic\",\r\n    \"noOfParticipants\": 10,\r\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}\\v1\\meeting\\6096bd3b5e3b0f2840be950b",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"meeting",
+								"6096bd3b5e3b0f2840be950b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Meeting By Id",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"6096bd3b5e3b0f2840be950b\",\r\n    \"name\": \"zoom-meeting-name2\",\r\n    \"topic\": \"zoom-meeting-topic\",\r\n    \"noOfParticipants\": 10,\r\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting\\6096bd3b5e3b0f2840be950b",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting",
+										"6096bd3b5e3b0f2840be950b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "166"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a6-FZaGoTlsLoOn/H9lmrD0xIYDXXk\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:40:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"interactions\": [],\n    \"id\": \"6096bd3b5e3b0f2840be950b\",\n    \"name\": \"zoom-meeting-name2\",\n    \"topic\": \"zoom-meeting-topic\",\n    \"noOfParticipants\": 10,\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Meeting By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDk2YjRmM2VkMTJhZTM1NDRiMzkyOTUiLCJpYXQiOjE2MjA0OTE4MDcsImV4cCI6MTYyMDQ5MzYwNywidHlwZSI6ImFjY2VzcyJ9.f6Br3Xz78K2Zy_7I2-UuizkIY4rFYbVtGX9aNt2e2xk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}\\v1\\meeting\\6096bd3b5e3b0f2840be950b",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"meeting",
+								"6096bd3b5e3b0f2840be950b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Meeting By Id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting\\6096bd3b5e3b0f2840be950b",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting",
+										"6096bd3b5e3b0f2840be950b"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:42:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get Meeting By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDk2YjRmM2VkMTJhZTM1NDRiMzkyOTUiLCJpYXQiOjE2MjIyNzkzNTEsImV4cCI6MTYyMjI4NjU1MSwidHlwZSI6ImFjY2VzcyJ9.izxtUIqk22gRoG-RKU_f2970M2gGkQRn1W5xYe7e5Ao",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}\\v1\\meeting\\60b204d85e38831e849311cb",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"meeting",
+								"60b204d85e38831e849311cb"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Meeting By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting\\6096bd3b5e3b0f2840be950b",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting",
+										"6096bd3b5e3b0f2840be950b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "165"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a5-jLKLOmUiG/uQHozYeo7tl8hnT/4\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:39:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"interactions\": [],\n    \"id\": \"6096bd3b5e3b0f2840be950b\",\n    \"name\": \"zoom-meeting-name\",\n    \"topic\": \"zoom-meeting-topic\",\n    \"noOfParticipants\": 10,\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n}"
+						},
+						{
+							"name": "Get Meeting By Id Latest",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting\\60b204d85e38831e849311cb",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting",
+										"60b204d85e38831e849311cb"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a4d-iGkim8jldk9Q5BbNe9+2oOw/00A\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 May 2021 09:10:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"60b204d85e38831e849311cb\",\n    \"name\": \"Work life balance Latest\",\n    \"topic\": \"Work life balance Latest\",\n    \"noOfParticipants\": 45,\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\",\n    \"hub\": \"Madeline Underwood\",\n    \"duration\": \"1Hr 33Min\",\n    \"interactionsRawData\": \"{\\\"videos\\\":[{\\\"id\\\":0,\\\"vname\\\":\\\"NIIT R&D Conference\\\",\\\"vduration\\\":\\\"2hrs 30mins\\\",\\\"vheldOn\\\":\\\"21 Feb 2020\\\",\\\"vhubs\\\":[],\\\"data\\\":[{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":1,\\\"cdoi\\\":8,\\\"ia\\\":null},{\\\"pid\\\":\\\"8\\\",\\\"pname\\\":\\\"Speaker_8\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"11\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":2,\\\"cdoi\\\":11,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"9\\\",\\\"pname\\\":\\\"Speaker_9\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"1\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":3,\\\"cdoi\\\":1,\\\"ia\\\":\\\"8\\\"},{\\\"pid\\\":\\\"4\\\",\\\"pname\\\":\\\"Speaker_4\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"11\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":4,\\\"cdoi\\\":11,\\\"ia\\\":\\\"9\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"3\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":5,\\\"cdoi\\\":11,\\\"ia\\\":\\\"4\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"4\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":6,\\\"cdoi\\\":4,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":7,\\\"cdoi\\\":19,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"10\\\",\\\"pname\\\":\\\"Speaker_10\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"2\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":8,\\\"cdoi\\\":2,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"13\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":9,\\\"cdoi\\\":32,\\\"ia\\\":\\\"10\\\"},{\\\"pid\\\":\\\"8\\\",\\\"pname\\\":\\\"Speaker_8\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"6\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":10,\\\"cdoi\\\":17,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"10\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":11,\\\"cdoi\\\":14,\\\"ia\\\":\\\"8\\\"},{\\\"pid\\\":\\\"5\\\",\\\"pname\\\":\\\"Speaker_5\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"14\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":12,\\\"cdoi\\\":14,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"2\\\",\\\"pname\\\":\\\"Speaker_2\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"10\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":13,\\\"cdoi\\\":10,\\\"ia\\\":\\\"5\\\"},{\\\"pid\\\":\\\"5\\\",\\\"pname\\\":\\\"Speaker_5\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"10\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":14,\\\"cdoi\\\":24,\\\"ia\\\":\\\"2\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"7\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":15,\\\"cdoi\\\":21,\\\"ia\\\":\\\"5\\\"},{\\\"pid\\\":\\\"8\\\",\\\"pname\\\":\\\"Speaker_8\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"23\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":16,\\\"cdoi\\\":40,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"4\\\",\\\"pname\\\":\\\"Speaker_4\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"16\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":17,\\\"cdoi\\\":27,\\\"ia\\\":\\\"8\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"19\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":18,\\\"cdoi\\\":51,\\\"ia\\\":\\\"4\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"6\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":19,\\\"cdoi\\\":27,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"7\\\",\\\"pname\\\":\\\"Speaker_7\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"3\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":20,\\\"cdoi\\\":3,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"5\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":21,\\\"cdoi\\\":56,\\\"ia\\\":\\\"7\\\"},{\\\"pid\\\":\\\"2\\\",\\\"pname\\\":\\\"Speaker_2\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"17\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":22,\\\"cdoi\\\":27,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"8\\\",\\\"pname\\\":\\\"Speaker_8\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":23,\\\"cdoi\\\":48,\\\"ia\\\":\\\"2\\\"},{\\\"pid\\\":\\\"10\\\",\\\"pname\\\":\\\"Speaker_10\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"20\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":24,\\\"cdoi\\\":22,\\\"ia\\\":\\\"8\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"6\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":25,\\\"cdoi\\\":33,\\\"ia\\\":\\\"10\\\"},{\\\"pid\\\":\\\"7\\\",\\\"pname\\\":\\\"Speaker_7\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":26,\\\"cdoi\\\":11,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"32\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":27,\\\"cdoi\\\":88,\\\"ia\\\":\\\"7\\\"},{\\\"pid\\\":\\\"5\\\",\\\"pname\\\":\\\"Speaker_5\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":28,\\\"cdoi\\\":32,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"1\\\",\\\"pname\\\":\\\"Speaker_1\\\",\\\"ptype\\\":\\\"hub\\\",\\\"dio\\\":\\\"21\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":29,\\\"cdoi\\\":109,\\\"ia\\\":\\\"5\\\"},{\\\"pid\\\":\\\"7\\\",\\\"pname\\\":\\\"Speaker_7\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"8\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":30,\\\"cdoi\\\":19,\\\"ia\\\":\\\"1\\\"},{\\\"pid\\\":\\\"8\\\",\\\"pname\\\":\\\"Speaker_8\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"6\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":31,\\\"cdoi\\\":54,\\\"ia\\\":\\\"7\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"4\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":32,\\\"cdoi\\\":37,\\\"ia\\\":\\\"8\\\"},{\\\"pid\\\":\\\"10\\\",\\\"pname\\\":\\\"Speaker_10\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"11\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":1,\\\"id\\\":33,\\\"cdoi\\\":33,\\\"ia\\\":\\\"6\\\"},{\\\"pid\\\":\\\"6\\\",\\\"pname\\\":\\\"Speaker_6\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"9\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":34,\\\"cdoi\\\":46,\\\"ia\\\":\\\"10\\\"},{\\\"pid\\\":\\\"10\\\",\\\"pname\\\":\\\"Speaker_10\\\",\\\"ptype\\\":\\\"spoke\\\",\\\"dio\\\":\\\"27\\\",\\\"ci_graph\\\":\\\"1\\\",\\\"vs\\\":0,\\\"id\\\":35,\\\"cdoi\\\":60,\\\"ia\\\":\\\"6\\\"}]}]}\",\n    \"interactionsData\": [\n        {\n            \"dio\": \"3\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311d0\",\n            \"cdoi\": 11,\n            \"ia\": 4,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 5\n        },\n        {\n            \"dio\": \"8\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311cc\",\n            \"cdoi\": 8,\n            \"ia\": null,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 1\n        },\n        {\n            \"dio\": \"11\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311cd\",\n            \"cdoi\": 11,\n            \"ia\": 1,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 2\n        },\n        {\n            \"dio\": \"11\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311cf\",\n            \"cdoi\": 11,\n            \"ia\": 9,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 4\n        },\n        {\n            \"dio\": \"1\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311ce\",\n            \"cdoi\": 1,\n            \"ia\": 8,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 3\n        },\n        {\n            \"dio\": \"4\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311d1\",\n            \"cdoi\": 4,\n            \"ia\": 1,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 6\n        },\n        {\n            \"dio\": \"8\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311d2\",\n            \"cdoi\": 19,\n            \"ia\": 6,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 7\n        },\n        {\n            \"dio\": \"13\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311d4\",\n            \"cdoi\": 32,\n            \"ia\": 10,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 9\n        },\n        {\n            \"dio\": \"2\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311d3\",\n            \"cdoi\": 2,\n            \"ia\": 1,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 8\n        },\n        {\n            \"dio\": \"6\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311d5\",\n            \"cdoi\": 17,\n            \"ia\": 1,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 10\n        },\n        {\n            \"dio\": \"10\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311d6\",\n            \"cdoi\": 14,\n            \"ia\": 8,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 11\n        },\n        {\n            \"dio\": \"7\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311da\",\n            \"cdoi\": 21,\n            \"ia\": 5,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 15\n        },\n        {\n            \"dio\": \"10\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311d9\",\n            \"cdoi\": 24,\n            \"ia\": 2,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 14\n        },\n        {\n            \"dio\": \"14\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311d7\",\n            \"cdoi\": 14,\n            \"ia\": 6,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 12\n        },\n        {\n            \"dio\": \"10\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311d8\",\n            \"cdoi\": 10,\n            \"ia\": 5,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 13\n        },\n        {\n            \"dio\": \"23\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311db\",\n            \"cdoi\": 40,\n            \"ia\": 6,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 16\n        },\n        {\n            \"dio\": \"16\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311dc\",\n            \"cdoi\": 27,\n            \"ia\": 8,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 17\n        },\n        {\n            \"dio\": \"19\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311dd\",\n            \"cdoi\": 51,\n            \"ia\": 4,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 18\n        },\n        {\n            \"dio\": \"6\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311de\",\n            \"cdoi\": 27,\n            \"ia\": 1,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 19\n        },\n        {\n            \"dio\": \"3\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311df\",\n            \"cdoi\": 3,\n            \"ia\": 6,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 20\n        },\n        {\n            \"dio\": \"5\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311e0\",\n            \"cdoi\": 56,\n            \"ia\": 7,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 21\n        },\n        {\n            \"dio\": \"17\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311e1\",\n            \"cdoi\": 27,\n            \"ia\": 1,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 22\n        },\n        {\n            \"dio\": \"8\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311e2\",\n            \"cdoi\": 48,\n            \"ia\": 2,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 23\n        },\n        {\n            \"dio\": \"20\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311e3\",\n            \"cdoi\": 22,\n            \"ia\": 8,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 24\n        },\n        {\n            \"dio\": \"6\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311e4\",\n            \"cdoi\": 33,\n            \"ia\": 10,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 25\n        },\n        {\n            \"dio\": \"8\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311e5\",\n            \"cdoi\": 11,\n            \"ia\": 6,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 26\n        },\n        {\n            \"dio\": \"32\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311e6\",\n            \"cdoi\": 88,\n            \"ia\": 7,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 27\n        },\n        {\n            \"dio\": \"21\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311e8\",\n            \"cdoi\": 109,\n            \"ia\": 5,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 29\n        },\n        {\n            \"dio\": \"8\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311e7\",\n            \"cdoi\": 32,\n            \"ia\": 1,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 28\n        },\n        {\n            \"dio\": \"8\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311e9\",\n            \"cdoi\": 19,\n            \"ia\": 1,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 30\n        },\n        {\n            \"dio\": \"6\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311ea\",\n            \"cdoi\": 54,\n            \"ia\": 7,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 31\n        },\n        {\n            \"dio\": \"4\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311eb\",\n            \"cdoi\": 37,\n            \"ia\": 8,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 32\n        },\n        {\n            \"dio\": \"9\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311ed\",\n            \"cdoi\": 46,\n            \"ia\": 10,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 34\n        },\n        {\n            \"dio\": \"11\",\n            \"ci_graph\": \"1\",\n            \"vs\": 1,\n            \"id\": \"60b204d85e38831e849311ec\",\n            \"cdoi\": 33,\n            \"ia\": 6,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 33\n        },\n        {\n            \"dio\": \"27\",\n            \"ci_graph\": \"1\",\n            \"vs\": 0,\n            \"id\": \"60b204d85e38831e849311ee\",\n            \"cdoi\": 60,\n            \"ia\": 6,\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"interactionSequence\": 35\n        }\n    ],\n    \"meetingStats\": [\n        {\n            \"meeting\": \"60b204d85e38831e849311cb\",\n            \"noOfParticipants\": 45,\n            \"activeParticipants\": 4,\n            \"activeParticipantsPer\": 8.88888888888889,\n            \"partialParticipants\": 5,\n            \"partialParticipantsPer\": 11.11111111111111,\n            \"noParticipants\": 36,\n            \"noParticipantsPer\": 80,\n            \"spokeToSpokeCollaboration\": 19,\n            \"spokeToSpokeCollaborationPer\": 54.285714285714285,\n            \"spokeToHubCollaboration\": 16,\n            \"spokeToHubCollaborationPer\": 45.714285714285715,\n            \"totalInteractions\": 35,\n            \"timeDurationStats\": \"{\\\"< 1 minute\\\":19,\\\"1 minutes\\\":11,\\\"2 minutes\\\":4,\\\"3 minutes\\\":1}\",\n            \"id\": \"60b204d85e38831e849311ef\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Interaction Management",
+			"item": [
+				{
+					"name": "Create Interaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDk2YjRmM2VkMTJhZTM1NDRiMzkyOTUiLCJpYXQiOjE2MjA0ODk5ODUsImV4cCI6MTYyMDQ5MTc4NSwidHlwZSI6ImFjY2VzcyJ9.DS3N3r7DHR1QkAF4qrnuHY_7Ez1dXIgLmIRNLIOd85A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"zoom-meeting-02\",\r\n  \"name\": \"zoom-meeting-name\",\r\n  \"topic\": \"zoom-meeting-topic\",\r\n  \"noOfParticipants\": 10,\r\n  \"heldOn\": \"01-May-2021\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}\\v1\\meeting",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"meeting"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Meeting",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": \"zoom-meeting-02\",\r\n  \"name\": \"zoom-meeting-name\",\r\n  \"topic\": \"zoom-meeting-topic\",\r\n  \"noOfParticipants\": 10,\r\n  \"heldOn\": \"01-May-2021\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "165"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a5-5MqFrTjSRGW1gaV45inDS+RZMLk\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:21:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"interactions\": [],\n    \"id\": \"6096baa300aaff42f0003f8b\",\n    \"name\": \"zoom-meeting-name\",\n    \"topic\": \"zoom-meeting-topic\",\n    \"noOfParticipants\": 10,\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n}"
+						},
+						{
+							"name": "Create Meeting",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": \"zoom-meeting-13\",\r\n  \"name\": \"zoom-meeting-name\",\r\n  \"topic\": \"zoom-meeting-topic\",\r\n  \"noOfParticipants\": 15,\r\n  \"heldOn\": \"01-May-2021\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "165"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a5-JgOJl1dE4fPDLd8jjq5fxRb2oBg\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:34:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"interactions\": [],\n    \"id\": \"6096bd985e3b0f2840be9511\",\n    \"name\": \"zoom-meeting-name\",\n    \"topic\": \"zoom-meeting-topic\",\n    \"noOfParticipants\": 15,\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Meetings - Pagination",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDk2YjRmM2VkMTJhZTM1NDRiMzkyOTUiLCJpYXQiOjE2MjA0OTE4MDcsImV4cCI6MTYyMDQ5MzYwNywidHlwZSI6ImFjY2VzcyJ9.f6Br3Xz78K2Zy_7I2-UuizkIY4rFYbVtGX9aNt2e2xk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/v1/meeting?sortBy=noOfParticipants&limit=4&page=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"meeting"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "noOfParticipants"
+								},
+								{
+									"key": "limit",
+									"value": "4"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Meetings - Pagination",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sortBy\": \"id\",\r\n  \"limit\": \"1\",\r\n  \"page\": \"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "397"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18d-bwluZFSYhHBzyrs5mF9D33wVc3I\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:29:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"results\": [\n        {\n            \"interactions\": [],\n            \"id\": \"6096b7fedc4869405c81d1ff\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        },\n        {\n            \"interactions\": [],\n            \"id\": \"6096baa300aaff42f0003f8b\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        }\n    ],\n    \"page\": 1,\n    \"limit\": 10,\n    \"totalPages\": 1,\n    \"totalResults\": 2\n}"
+						},
+						{
+							"name": "Get Meetings - Pagination",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/meeting?sortBy=noOfParticipants&limit=4&page=2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting"
+									],
+									"query": [
+										{
+											"key": "sortBy",
+											"value": "noOfParticipants"
+										},
+										{
+											"key": "limit",
+											"value": "4"
+										},
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "729"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d9-aXZGjzmdj0jgTRUEMwP0UnFI6gc\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:37:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"results\": [\n        {\n            \"interactions\": [],\n            \"id\": \"6096bd3b5e3b0f2840be950b\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        },\n        {\n            \"interactions\": [],\n            \"id\": \"6096b7fedc4869405c81d1ff\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        },\n        {\n            \"interactions\": [],\n            \"id\": \"6096bd2e5e3b0f2840be9508\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        },\n        {\n            \"interactions\": [],\n            \"id\": \"6096bd7c5e3b0f2840be950c\",\n            \"name\": \"zoom-meeting-name\",\n            \"topic\": \"zoom-meeting-topic\",\n            \"noOfParticipants\": 10,\n            \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n        }\n    ],\n    \"page\": 2,\n    \"limit\": 4,\n    \"totalPages\": 3,\n    \"totalResults\": 12\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Meeting By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDk2YjRmM2VkMTJhZTM1NDRiMzkyOTUiLCJpYXQiOjE2MjA0OTE4MDcsImV4cCI6MTYyMDQ5MzYwNywidHlwZSI6ImFjY2VzcyJ9.f6Br3Xz78K2Zy_7I2-UuizkIY4rFYbVtGX9aNt2e2xk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"6096bd3b5e3b0f2840be950b\",\r\n    \"name\": \"zoom-meeting-name2\",\r\n    \"topic\": \"zoom-meeting-topic\",\r\n    \"noOfParticipants\": 10,\r\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}\\v1\\meeting\\6096bd3b5e3b0f2840be950b",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"meeting",
+								"6096bd3b5e3b0f2840be950b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Meeting By Id",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"6096bd3b5e3b0f2840be950b\",\r\n    \"name\": \"zoom-meeting-name2\",\r\n    \"topic\": \"zoom-meeting-topic\",\r\n    \"noOfParticipants\": 10,\r\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting\\6096bd3b5e3b0f2840be950b",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting",
+										"6096bd3b5e3b0f2840be950b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "166"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a6-FZaGoTlsLoOn/H9lmrD0xIYDXXk\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:40:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"interactions\": [],\n    \"id\": \"6096bd3b5e3b0f2840be950b\",\n    \"name\": \"zoom-meeting-name2\",\n    \"topic\": \"zoom-meeting-topic\",\n    \"noOfParticipants\": 10,\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Meeting By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDk2YjRmM2VkMTJhZTM1NDRiMzkyOTUiLCJpYXQiOjE2MjA0OTE4MDcsImV4cCI6MTYyMDQ5MzYwNywidHlwZSI6ImFjY2VzcyJ9.f6Br3Xz78K2Zy_7I2-UuizkIY4rFYbVtGX9aNt2e2xk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}\\v1\\meeting\\6096bd3b5e3b0f2840be950b",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"meeting",
+								"6096bd3b5e3b0f2840be950b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Meeting By Id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting\\6096bd3b5e3b0f2840be950b",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting",
+										"6096bd3b5e3b0f2840be950b"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:42:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get Meeting By Id Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDk2YjRmM2VkMTJhZTM1NDRiMzkyOTUiLCJpYXQiOjE2MjA0OTE4MDcsImV4cCI6MTYyMDQ5MzYwNywidHlwZSI6ImFjY2VzcyJ9.f6Br3Xz78K2Zy_7I2-UuizkIY4rFYbVtGX9aNt2e2xk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}\\v1\\meeting\\6096bd3b5e3b0f2840be950b",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"meeting",
+								"6096bd3b5e3b0f2840be950b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Meeting By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}\\v1\\meeting\\6096bd3b5e3b0f2840be950b",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"meeting",
+										"6096bd3b5e3b0f2840be950b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "165"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a5-jLKLOmUiG/uQHozYeo7tl8hnT/4\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 May 2021 16:39:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"interactions\": [],\n    \"id\": \"6096bd3b5e3b0f2840be950b\",\n    \"name\": \"zoom-meeting-name\",\n    \"topic\": \"zoom-meeting-topic\",\n    \"noOfParticipants\": 10,\n    \"heldOn\": \"2021-04-30T18:30:00.000Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": []
+		},
+		{
+			"name": "User Management",
+			"item": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

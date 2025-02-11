@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  user-points:
+    container_name: user-points-dev
+    command: yarn dev -L

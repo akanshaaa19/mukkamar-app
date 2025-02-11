@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  -speakerdiarization:
+    container_name: user-points-prod
+    command: yarn start

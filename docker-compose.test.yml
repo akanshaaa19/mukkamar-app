@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  user-points:
+    container_name: user-points-test
+    command: yarn test
