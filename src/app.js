@@ -21,10 +21,6 @@ if (config.env !== 'test') {
   app.use(morgan.errorHandler);
 }
 
-
-
-
-
 // set security HTTP headers
 app.use(helmet());
 
@@ -55,7 +51,7 @@ if (config.env === 'production') {
 }
 
 app.get('/', function (req, res) {
-  res.redirect("/public/index.html");
+  res.redirect('/public/index.html');
 });
 
 // v1 api routes
